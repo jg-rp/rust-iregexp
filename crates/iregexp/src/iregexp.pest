@@ -2,6 +2,8 @@
 // 
 // At this time, I'm mainly focused on checking for valid I-Regepx grammar. Little
 // effort has been made to silence some tokens to make the result pleasant to parse.
+// 
+// TODO: Tag dots outside character classes for future mapping to PCRE.
 
 pattern = { SOI ~ iregexp ~ EOI }
 
