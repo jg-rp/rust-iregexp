@@ -9,5 +9,5 @@ name = "i_regexp"
 crate-type = ["cdylib"]
 
 [dependencies]
-pyo3 = "0.20.0"
+pyo3 = { version = "0.21.2", features = ["extension-module"] }
 iregexp = { path = "../iregexp" }

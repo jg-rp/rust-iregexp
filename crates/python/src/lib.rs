@@ -1,7 +1,7 @@
 use iregexp::check;
 use pyo3::prelude::*;
 
-// TODO: docs
+/// Return _True_ if regular expression _pattern_ is valid according I-Regexp.
 #[pyfunction]
 #[pyo3(name = "check")]
 fn py_check(pattern: &str) -> bool {
@@ -9,7 +9,7 @@ fn py_check(pattern: &str) -> bool {
 }
 
 #[pymodule]
-fn i_regexp(_py: Python, m: &PyModule) -> PyResult<()> {
+fn i_regexp(_py: Python, m: &Bound<'_, PyModule>) -> PyResult<()> {
     m.add_function(wrap_pyfunction!(py_check, m)?)?;
     Ok(())
 }
