@@ -2,6 +2,12 @@
 name = "iregexp"
 version = "0.1.0"
 edition = "2021"
+license = "MIT"
+license-file = "LICENSE.txt"
+description = "A checking implementation of I-Regexp"
+homepage = "https://github.com/jg-rp/rust-iregexp"
+repository = "https://github.com/jg-rp/rust-iregexp"
+readme = "README.md"
 
 [dependencies]
 pest = "2.7"
