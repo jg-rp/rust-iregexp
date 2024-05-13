@@ -9,7 +9,7 @@ fn py_check(pattern: &str) -> bool {
 }
 
 #[pymodule]
-fn py_iregexp(_py: Python, m: &PyModule) -> PyResult<()> {
+fn i_regexp(_py: Python, m: &PyModule) -> PyResult<()> {
     m.add_function(wrap_pyfunction!(py_check, m)?)?;
     Ok(())
 }
