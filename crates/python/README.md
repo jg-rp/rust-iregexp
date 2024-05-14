@@ -11,7 +11,7 @@ python -m pip install i_regexp
 ## Usage
 
 ```python
-from i_regexp import check
+from iregexp_check import check
 
 check(r"[ab]{3}")  # True
 check(r"[0-9]*?")  # False
