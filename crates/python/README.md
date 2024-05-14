@@ -5,7 +5,7 @@ Check regular expressions for compliance with [RFC 9485](https://datatracker.iet
 ## Install
 
 ```
-python -m pip install i_regexp
+pip install iregexp_check
 ```
 
 ## Usage
