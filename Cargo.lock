@@ -76,7 +76,7 @@ checksum = "95505c38b4572b2d910cecb0281560f54b440a19336cbbcb27bf6ce6adc6f5a8"
 
 [[package]]
 name = "i_regexp"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "iregexp",
  "pyo3",
@@ -90,7 +90,7 @@ checksum = "b248f5224d1d606005e02c97f5aa4e88eeb230488bcc03bc9ca4d7991399f2b5"
 
 [[package]]
 name = "iregexp"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "pest",
  "pest_derive",

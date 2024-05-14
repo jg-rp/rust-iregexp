@@ -6,7 +6,7 @@ build-backend = "maturin"
 authors = [{ name = "James Prior", email = "jamesgr.prior@gmail.com" }]
 name = "i_regexp"
 requires-python = ">=3.8"
-readme = "./README.md"
+readme = "README.md"
 
 classifiers = [
     "Development Status :: 4 - Beta",
