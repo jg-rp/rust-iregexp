@@ -2,6 +2,23 @@
 
 Check regular expressions for compliance with [RFC 9485](https://datatracker.ietf.org/doc/html/rfc9485).
 
+**Table of Contents**
+
+- [Rust install](#rust-install)
+- [Rust usage](#rust-usage)
+- [Python install](#python-install)
+- [Python usage](#python-usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Rust install
+
+```
+cargo add iregexp
+```
+
+## Rust usage
+
 ```rust
 use iregexp::check;
 
@@ -10,16 +27,25 @@ fn main() {
 }
 ```
 
+## Python install
+
+```
+pip install iregexp_check
+```
+
+## Python usage
+
+```python
+from iregexp_check import check
+
+print(check(r"[ab]{3}"))  # True
+print(check(r"[0-9]*?"))  # False
+```
+
 ## Contributing
 
-TODO:
+See [CONTRIBUTING.md](https://github.com/jg-rp/rust-iregexp/blob/main/.github/CONTRIBUTING.md)
 
-### Python bindings
+## License
 
-As we're using a Rust [workspace](https://doc.rust-lang.org/cargo/reference/workspaces.html), with multiple crates sharing a `target` directory and a root `Cargo.toml`, [`maturin`](https://www.maturin.rs/) commands need to specify the `-m` option, pointing to the `python` crate's `Cargo.toml` file.
-
-For example, from the repository root, install the Python package locally during development with:
-
-```
-maturin develop -m crates/python/Cargo.toml
-```
+[MIT](https://spdx.org/licenses/MIT.html) license.

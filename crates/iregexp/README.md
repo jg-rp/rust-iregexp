@@ -2,6 +2,14 @@
 
 Check regular expressions for compliance with [RFC 9485](https://datatracker.ietf.org/doc/html/rfc9485).
 
+## Install
+
+```
+cargo add iregexp
+```
+
+## Usage
+
 ```rust
 use iregexp::check;
 
